@@ -45,7 +45,8 @@ form.addEventListener('submit', e => {
         fetch('http://185.146.3.44/api/v1/auth/moderators/', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "Access-Control-Allow-Origin": "*",
             },
             body: JSON.stringify(user)
         });
