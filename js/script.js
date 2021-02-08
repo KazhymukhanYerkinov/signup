@@ -54,18 +54,7 @@ form.addEventListener('submit', e => {
         document.getElementById('surname').value = '';
         document.getElementById('email').value = '';
         document.querySelector('#password1').value = '';
-        document.querySelector('#password2').value = '';
-
-
-
-
-
-
-
-
-        
-
-        
+        document.querySelector('#password2').value = '';  
     } 
     
 });
