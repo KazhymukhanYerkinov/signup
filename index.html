@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title> E-MEN </title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__inner">
+
+            <div class="title"> Регистрация </div>
+
+            <form class="form" id="form">
+                <div class="form__group">
+                    <input type="text" id="name" name="name" placeholder="Имя"/>
+                    <small></small>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" id="surname" name="surname" placeholder="Фамилия"/>
+                    <small></small>
+                </div>
+
+                <div class="form__group">
+                    <input type="text" id="email" name="email" placeholder="Е-mail"/>
+                    <small></small>
+                </div>
+
+                <div class="form__group">
+                    <input type="password" id="password1" name="email" placeholder="Создать пароль"/>
+                    <i class="far fa-eye" id="togglePassword1"></i>
+                    <small></small>
+                </div>
+
+                <div class="form__group">
+                    <input type="password" id="password2" name="email" placeholder="Повторить пароль"/>
+                    <i class="far fa-eye" id="togglePassword2"></i>
+                    <small></small>
+                </div>
+
+                <button class="button"> Зарегистрироваться </button> 
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__inner">
+            <div class="modal__text">
+                Вы успешно зарегистрировались. Теперь вы можете перейти на страницу администратора. Удачи в работе :)
+            </div>
+            <a href="http://185.146.3.44/admin/"> <button class="success" onclick="closeModal()"> Войти </button> </a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
